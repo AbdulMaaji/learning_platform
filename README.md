@@ -25,7 +25,49 @@ learn_platform/
 └── README.md           # Documentation
 
 
-)
+⚙️ Installation
+
+Clone the repo
+
+git clone https://github.com/<your-username>/DevLab-Backend.git
+cd DevLab-Backend
+
+
+Run the server
+
+python server.py
+
+
+Open in browser
+
+http://127.0.0.1:8000/
+ → Welcome message
+
+http://127.0.0.1:8000/lessons
+ → Lesson list
+
+ 📘 Example Response
+GET /lessons
+[
+  {
+    "id": 1,
+    "title": "Python Basics",
+    "description": "Introduction to Python for beginners."
+  },
+  {
+    "id": 2,
+    "title": "Data Structures",
+    "description": "Learn lists, dictionaries, and tuples in Python."
+  }
+]
+
+💡 Next Steps
+
+🧩 Stage 2 → Add POST endpoint to create new lessons
+
+🔐 Stage 3 → Add users and basic authentication
+
+💾 Stage 4 → Replace JSON with real database (SQLite or MongoDB)
 
 🧑‍💻 Author
 
